@@ -1,0 +1,406 @@
+* {
+  font-family: "Menlo";
+  color: rgb(82, 82, 82);
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (min-width: 651px) {
+  header {
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    line-height: 32px;
+  }
+
+  .logo-img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .ltgrey {color: lightgrey;}
+
+  .nav {padding-right: 60px;} /* room for slider */
+
+  .nav-logo {display: none;}
+
+  a {
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border: 2px solid black;
+  }
+
+  body {
+    margin:0;
+    margin-top: 64px;
+  }
+
+  .one {
+    background-color: lightgrey;
+    padding: 32px 24px;
+    display: flex;
+  }
+
+  .one-one img {
+    height: 400px;
+    width: 55vw;
+  }
+
+  .one-two {
+    padding-left: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    text-align: center;
+    padding: 6px;
+    border: 2px solid rgb(82, 82, 82);
+    transition-duration: 0.5s;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    border: 2px solid black;
+  }
+
+  .two {display: flex;}
+
+  .two-one {
+    padding: 32px 24px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid lightgrey;
+  }
+
+  .two-one img {
+    height: 300px;
+    width: 55vw;}
+
+  .two-one h2 {margin-top: 32px;}
+
+  .two-one h4 {margin-top: 24px;}
+
+  .two-one:hover {
+    background-color: lightgrey;
+    border: 1px solid white;
+    border-left: none;
+  }
+
+  .two-two {border-top: 1px solid white;}
+
+  .two-two>*{border-bottom: 1px solid lightgrey;}
+
+  .two >*>*:hover {background-color: lightgrey;}
+
+  .two-two-one {display: flex;}
+
+  .two-two-one img {
+    flex: 7;
+    margin: 16px;
+    height: auto;
+  }
+
+  .two-two-one >*>*{
+    padding: 0;
+    margin: 4px;
+  }
+
+  .two-two-one-two {
+    flex: 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .two a {color: blue;}
+
+  .two a:hover {text-decoration: underline;}
+
+  .three {
+    background-color: lightgrey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid white;
+  }
+
+  .three-one {
+    width: 100%;
+    text-align: center;
+    margin: 32px; 
+  }
+
+  .three-two {
+    margin: 0 56px 16px;
+    display: flex;
+    padding-top: 0;
+  }
+
+  .three-two-one {
+    background-color: white;
+    margin: 0 16px 16px 16px;
+    flex: 1;
+  }
+
+  .three-two-one img {
+    height: auto;
+    width: 100%;
+  }
+
+  .three-two-one-one {margin: 16px 16px 24px;}
+
+  .three-two-one-one h3,
+  .three-two-one-one h5 {margin:8px;}
+
+  .three-two-one-one h5 {color: lightgrey;}
+
+  .three-two-mobile {display: none;}
+
+  .four-header {
+    width: 100%;
+    text-align: center;
+    margin: 31px 0 8px; 
+  }
+
+  .four {display: flex;}
+
+  .four-one {
+    padding: 24px 24px;
+    margin-bottom: 0px;
+  }
+
+  /*
+  .four-one video {
+    height: 300px;
+    width: 55vw;
+  }
+  */
+
+  .four-one video {
+    height: 300px;
+    width: 55vw;
+  }
+
+  .four-one h3 {margin-top: 24px;}
+
+  .four-one h5 {margin-top: 8px;}
+
+  .four-one:hover {background-color: lightgrey;}
+
+  .four >*>*:hover {background-color: lightgrey;}
+
+  .four-two {padding-top: 24px;}
+
+  .four-two-one {display: flex;}
+
+  .four-two-one img {
+    flex: 7;
+    margin: 16px;
+    height: auto;
+  }
+
+  .four-two-one >*>*{
+    padding: 0;
+    margin: 8px;
+  }
+
+  .four-two-one-one {
+    flex: 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .four-mobile {display: none;}
+
+  .five {
+    padding: 16px 24px;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .five > p {margin: 0;}
+
+  .inline p {display: inline;}
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  header {
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    background-color: white;
+  }
+
+  .logo-img {
+    height: 32px;
+    width: 32px;
+    margin: 16px;
+  }
+
+  .logo {display: none;}
+
+  .nav {display: none;}
+
+  .nav-logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .one {background-color: lightgrey;}
+
+  .one-one img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .one-two {
+    padding-bottom: 32px;
+    margin: 30px 16px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one-two h1 {margin: 0;}
+  
+  .one-two h3 {margin: 32px 0 24px;}
+
+  .button {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    border: 2px solid rgb(82, 82, 82);
+    transition-duration: 0.5s;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    border: 2px solid black;
+  }
+
+  .two-one {display: none;}
+
+  .two-two {border-top: 1px solid white}
+
+  .two-two-one {
+    padding: 16px 16px 0;
+  }
+
+  .two-two-one:hover {
+    background-color: lightgrey;
+  }
+
+  .two-two-one img {
+    height: auto;
+    width: 100%;
+  }
+
+  .two a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .two a:hover {
+    text-decoration: underline;
+  }
+
+  .two-two-one-two {
+    padding: 16px;
+    padding-bottom: 48px;
+  }
+
+  .two-two-one-three {
+    padding: 16px 16px;
+  }
+
+  .two >*>*:hover {background-color: lightgrey;}
+
+  .three {border: 1px solid lightgrey;}
+
+  .three-one {
+    padding: 32px 0 8px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .three-two {display: none;}
+
+  .three-two-mobile {
+    margin: 8px 8px 32px;
+  }
+
+  .three-two-mobile a {
+    text-decoration: none;
+  }
+
+  .three-two-mobile h3 {
+    background-color: lightgrey;
+    padding: 14px 14px 22px;
+    border: 2px solid lightgrey;
+    margin: 8px;
+    transition-duration: 0.5s;
+  }
+
+  .three-two-mobile h3:hover {
+    background-color: white;
+    color: black;
+    padding: 14px 14px 22px;
+    border: 2px solid black;
+    margin: 8px;
+  }
+
+  .four-header {
+    padding: 32px 0 16px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .four {display: none;}
+
+  .four-mobile {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .five {margin-left: 16px;}
+
+  .inline {display: none;}
+}
